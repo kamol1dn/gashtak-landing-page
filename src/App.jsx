@@ -136,24 +136,40 @@ const RotatingText = () => {
   );
 };
 
-const App = () => (
-  <>
-    <div className="page-glow" aria-hidden="true" />
-    <div className="container">
-      <header className="site-header">
-        <div className="logo-chip">
-          <span>#</span>
-          <strong>Gashtak</strong>
+const App = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <>
+      <div className="page-glow" aria-hidden="true" />
+      
+      <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="header-content">
+          <div className="logo-chip">
+            <span>#</span>
+            <strong>Gashtak</strong>
+          </div>
+          <nav className="primary-nav" aria-label="Main navigation">
+            <a href="#home" className="active">
+              home
+            </a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#contact">contact</a>
+          </nav>
         </div>
-        <nav className="primary-nav" aria-label="Main navigation">
-          <a href="#home" className="active">
-            home
-          </a>
-          <a href="#about">about</a>
-          <a href="#services">services</a>
-          <a href="#contact">contact</a>
-        </nav>
       </header>
+
+    <div className="container">
 
       <main id="home" className="hero">
         <video className="hero-video" autoPlay loop muted playsInline>
@@ -293,6 +309,7 @@ const App = () => (
       </footer>
     </div>
   </>
-);
+  );
+};
 
 export default App;
