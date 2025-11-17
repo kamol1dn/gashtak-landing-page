@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #0a0a0f;
+  --bg: #0a0a0f;
+  --bg-elevated: #12121a;
+  --panel: #1a1a26;
+  --panel-hover: #20202e;
+  --text: #f8f9fc;
+  --text-secondary: #a0a3b8;
+  --text-tertiary: #6b6e85;
+  --accent-teal: #14f0d5;
+  --accent-violet: #a855f7;
+  --accent-amber: #fbbf24;
+  --accent-rose: #fb7185;
+  --accent-cyan: #22d3ee;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --glass-bg: rgba(26, 26, 38, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 30px 90px rgba(0, 0, 0, 0.7);
+}

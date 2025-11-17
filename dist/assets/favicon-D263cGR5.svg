@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gashtak icon">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7a45" />
+      <stop offset="50%" stop-color="#f25d94" />
+      <stop offset="100%" stop-color="#8d5bff" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#07060c" />
+  <path
+    d="M20 20h24v6H26v12h10v-6h8v12H20z"
+    fill="url(#g)"
+  />
+  <circle cx="20" cy="20" r="6" fill="#ff7a45" />
+</svg>

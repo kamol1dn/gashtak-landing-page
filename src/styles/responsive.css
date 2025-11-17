@@ -1,0 +1,181 @@
+/* Desktop Layout */
+@media (min-width: 1025px) {
+  .hero-content {
+    gap: 4rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .primary-nav {
+    gap: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .hero {
+    min-height: 90vh;
+    border-radius: 24px;
+  }
+
+  .hero-content {
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .lede {
+    font-size: 1rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .container {
+    padding: 1.25rem;
+    gap: 2rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-content,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card,
+  .service-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-card {
+    padding: 2.5rem 1.75rem;
+    border-radius: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .logo-chip {
+    font-size: 0.8125rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .primary-nav {
+    gap: 1.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero {
+    border-radius: 20px;
+  }
+
+  .hero-content {
+    padding: 2rem 1.25rem;
+    gap: 1.75rem;
+  }
+
+  .eyebrow-badge {
+    left: 1rem;
+    top: 1rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.875rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+  }
+
+  .container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-card,
+  .service-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-card {
+    padding: 2rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-content {
+    padding: 3rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
